@@ -1,0 +1,30 @@
+{
+  "name": "weatherforcast",
+  "version": "1.0.0",
+  "description": "A basic weather app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latakin/weatherforcast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/latakin/weatherforcast/issues"
+  },
+  "homepage": "https://github.com/latakin/weatherforcast#readme",
+  "devDependencies": {
+    "sass": "^1.93.3",
+    "vite": "^7.2.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8"
+  }
+}
