@@ -21,7 +21,7 @@ export async function udatePage(city) {
     const description = forecast.description;
     descriptionDiv.innerHTML = `
                             <p class="pe-2"><i class="bi bi-cloud-drizzle display-1 "></i>
-                            <h3 class=" display-6">${description}</h3>
+                            <h3 class="text-start small ">${description}</h3>
                             </p>
     `
     //populate day 1 of 5 days forecast
