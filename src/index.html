@@ -7,31 +7,36 @@
     <script type="module" src="./js/main.js"></script>
   </head>
   <body class="m-0 d-flex flex-column min-vh-100">
-    <header class="col-12 text-center  text-bg-primary shadow">
-        <h2>Weather Forecast</h2>
+    <header class="col-12 text-center  text-bg-primary shadow p-2 ">
+        <h2 class="fs-2">Weather Forecast   <i class="bi bi-cloud-sun-fill" style="font-size: 2.5rem;"></i></h2>
     </header>
 
     <main class="flex-grow-1">
         <div class="col-12 text-center my-2">
-            <input id="city" class="col-5" type="text" placeholder="ENTER CITY NAME">
-            <button id="search" class="col-2 btn btn-primary">Search</button>
+            <form action="">
+                <input id="city" class="col-5" type="text" placeholder="ENTER CITY NAME" required>
+                <button id="search"  class="col-2 btn btn-primary">Search</button>
+            </form>
+            
         </div>
-
-        <div class="col-12 text-center d-flex justify-content-center p-2 m-2 " style="height: 400px;">
-            <div class="col-6 bg-white bg-opacity-50 p-2 me-4 container h-100 flex-fill shadow">okay</div>
-            <div class="col-3 bg-white bg-opacity-50 container h-100 flex-fill me-2 shadow">okay</div>
+       
+        <div class="col-12 text-center d-flex justify-content-center p-2 m-2 " style="height: 300px;">
+            
+            <div id="div1" class="col-6 bg-white bg-opacity-50 p-2 me-4 container h-100 flex-fill shadow"></div>
+            <div id="div2"  class="col-3 bg-white bg-opacity-50 container h-100 flex-fill me-2 shadow"></div>
         </div>
+         <div class="p-1 text-center text-bg-primary fs-3"><p>Five Days Forecast</p></div>
         <div class="col-12 text-center d-flex justify-content-center p-2 m-2 " style="height: 200px;">
-            <div class="col-2 bg-white shadow bg-opacity-50 p-2 mx-2 container h-100 flex-fill"></div>
-            <div class="col-2 bg-white bg-white bg-opacity-50 p-2 me-2 container h-100 flex-fill shadow"></div>
-            <div class="col-2 bg-white bg-opacity-50 p-2 me-2 container h-100 flex-fill shadow"></div>
-            <div class="col-2 bg-white bg-opacity-50 p-2 me-2 container h-100 flex-fill shadow"></div>
-            <div class="col-2 bg-white bg-opacity-50 p-2 me-2 container h-100 flex-fill shadow"></div>
+            <div id="div3"  class="col-2 bg-white shadow bg-opacity-50 p-1 mx-2 container h-100 flex-fill"></div>
+            <div id="div4"  class="col-2 bg-white bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
+            <div id="div5"  class="col-2 bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
+            <div id="div6"  class="col-2 bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
+            <div id="div7"  class="col-2 bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
         </div>
     </main>
     <footer>
-        <div class="col-12 text-bg-primary text-center flex-fill shadow" style="height: 50px;">
-            <p>Built with love By Lateef</p>
+        <div class=" col-12 text-bg-primary text-center flex-fill shadow" style="height: 50px;">
+            <p class="fs-5 pt-2">&copy 2025 Built with &#x2764;&#xfe0f; By Lateef</p>
         </div>
     </footer>
     </div>

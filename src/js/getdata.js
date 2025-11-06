@@ -5,7 +5,13 @@ export async function getForecast(city) {
         const address = data.address;
         const description = data.description;
         const temp = data.days[0].temp;
+        const day1 = data.days[1].temp;
+        const day2 = data.days[2].temp
+        const day3 = data.days[3].temp
+        const day4 = data.days[4].temp
+        const day5 = data.days[5].temp
         console.log(`${address}, ${description}, ${temp}`);
+        return { address, description, temp, day1, day2, day3, day4, day5};
     } catch (error) {
         console.error('data not found');
     }
