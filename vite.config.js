@@ -1,6 +1,11 @@
-import { resolve } from 'path'
+import { resolve } from 'path';
+// vite.config.js
+import { defineConfig } from 'vite';
+
+
 
 export default {
+  base: '/weatherforcast/',
   root: resolve(__dirname, 'src'),
   build: {
     outDir: '../dist'
