@@ -4,42 +4,95 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Vite</title>
-    <script type="module" crossorigin src="/weatherforcast/assets/index-Dj72IKCT.js"></script>
+    <script type="module" crossorigin src="/weatherforcast/assets/index-BWRSN2Gi.js"></script>
     <link rel="stylesheet" crossorigin href="/weatherforcast/assets/index-F7lxgRKk.css">
   </head>
-  <body class="m-0 d-flex flex-column min-vh-100">
-    <header class="col-12 text-center  text-bg-primary shadow p-2 mb-3 ">
-        <h2 class="fs-2">Weather Forecast   <i class="bi bi-cloud-sun-fill" style="font-size: 2.5rem;"></i></h2>
-    </header>
+  <body class="m-0 d-flex flex-column min-vh-100 bg-light">
 
-    <main class="flex-grow-1">
-        <div class="col-12 text-center my-2 mb-3">
-            <form action="">
-                <input id="city" class="col-5" type="text" placeholder="ENTER CITY NAME" required>
-                <button id="search"  class="col-2 btn btn-primary">Search</button>
-            </form>
-            
-        </div>
-       
-        <div class="col-12 text-center d-flex justify-content-center p-2 mb-4 " style="height: 300px;">
-            
-            <div id="div1" class="col-6 bg-white bg-opacity-50 p-2 me-4 container h-100 flex-fill shadow"></div>
-            <div id="div2"  class="col-3 bg-white bg-opacity-50 container h-100 flex-fill me-2 shadow"></div>
-        </div>
-         <div class="pe-1 text-center text-bg-primary fs-3 mb-5"><p>Five Days Forecast</p></div>
-        <div class="col-12 text-center d-flex justify-content-center p-2 mt-4 h-100 vh-md-75">
-            <div id="div3"  class="col-2 bg-white shadow bg-opacity-50 p-1 mx-2 container h-100 flex-fill"></div>
-            <div id="div4"  class="col-2 bg-white bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
-            <div id="div5"  class="col-2 bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
-            <div id="div6"  class="col-2 bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
-            <div id="div7"  class="col-2 bg-white bg-opacity-50 p-1 me-2 container h-100 flex-fill shadow"></div>
-        </div>
-    </main>
-    <footer>
-        <div class=" col-12 text-bg-primary text-center flex-fill shadow" style="height: 50px;">
-            <p class="fs-5 pt-2">&copy; 2025 Built with &#x2764;&#xfe0f; By Lateef</p>
-        </div>
-    </footer>
+  <!-- Header -->
+  <header class="text-bg-primary shadow-sm p-3 text-center">
+    <h2 class="fs-2 mb-0 d-flex align-items-center justify-content-center gap-2">
+      Weather Forecast 
+      <i class="bi bi-cloud-sun-fill fs-1"></i>
+    </h2>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow-1 px-2 px-md-3">
+
+    <!-- Search Form -->
+    <div class="text-center my-4">
+      <form class="d-inline-flex gap-2 flex-wrap justify-content-center">
+        <input 
+          id="city" 
+          type="text" 
+          class="form-control form-control-lg col-12 col-sm-6 col-md-5 col-lg-4" 
+          placeholder="ENTER CITY NAME" 
+          required
+        >
+        <button id="search" class="btn btn-primary btn-lg px-4">
+          Search
+        </button>
+      </form>
     </div>
-  </body>
+
+    <!-- Current Weather Panel -->
+    <div class="container-fluid p-0 mb-5" style="height: 400px;">
+      <div class="row g-0 h-100">
+        <!-- Left: City + Temp + Icon -->
+        <div id="div1" 
+             class="col-8 col-md-5 
+                    bg-white bg-opacity-75 
+                    p-3 p-md-4 
+                    d-flex flex-column justify-content-center align-items-center 
+                    h-100 shadow-lg rounded-start">
+        </div>
+
+        <!-- Right: Conditions -->
+        <div id="div2" 
+             class="col-4 col-md-7 
+                    bg-white bg-opacity-75 
+                    p-3 p-md-5 
+                    d-flex flex-column justify-content-center align-items-start 
+                    h-100 shadow-lg rounded-end">
+        </div>
+      </div>
+    </div>
+
+    <!-- 5-Day Forecast Title -->
+    <h3 class="text-center text-bg-primary d-inline-block px-4 py-2 rounded-pill shadow-sm mb-4">
+      Five Days Forecast
+    </h3>
+
+    <!-- 5-Day Cards -->
+    <div class="row row-cols-2 row-cols-md-5 g-3 g-md-4 justify-content-center px-1 mb-2">
+      <div class="col">
+        <div id="div3" class="card h-100 bg-white bg-opacity-50 shadow-sm p-2 text-center d-flex flex-column justify-content-center">
+        </div>
+      </div>
+      <div class="col">
+        <div id="div4" class="card h-100 bg-white bg-opacity-50 shadow-sm p-2 text-center d-flex flex-column justify-content-center">
+        </div>
+      </div>
+      <div class="col">
+        <div id="div5" class="card h-100 bg-white bg-opacity-50 shadow-sm p-2 text-center d-flex flex-column justify-content-center">
+        </div>
+      </div>
+      <div class="col">
+        <div id="div6" class="card h-100 bg-white bg-opacity-50 shadow-sm p-2 text-center d-flex flex-column justify-content-center">
+        </div>
+      </div>
+      <div class="col">
+        <div id="div7" class="card h-100 bg-white bg-opacity-50 shadow-sm p-2 text-center d-flex flex-column justify-content-center">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-bg-primary text-center py-3 mt-auto shadow-sm">
+    <p class="mt-2 mb-0 fs-5">© 2025 Built with &#10084;&#65039; By Lateef</p>
+  </footer>
+
+</body>
 </html>
