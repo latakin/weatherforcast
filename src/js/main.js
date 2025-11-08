@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 
-//console.log(`${cityName}, whats going on`)
+
 searchBtn.addEventListener('click', async (e) => {
     e.preventDefault();
      const inp = document.getElementById("city");
@@ -38,6 +38,7 @@ searchBtn.addEventListener('click', async (e) => {
             const imageUrl = await getImage(cityName);
             document.body.style.backgroundImage = `url('${imageUrl}')`
             document.body.style.backgroundSize = 'cover'
+            inp.value = " ";
             
         }
        
